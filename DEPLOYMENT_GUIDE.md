@@ -148,15 +148,15 @@ git push -u origin main
 
 In Vercel project → Settings → Environment Variables, add:
 
-| Name | Value |
-|------|-------|
-| `VITE_FIREBASE_API_KEY` | Your Firebase API key |
-| `VITE_FIREBASE_AUTH_DOMAIN` | your-project.firebaseapp.com |
-| `VITE_FIREBASE_PROJECT_ID` | Your project ID |
-| `VITE_FIREBASE_STORAGE_BUCKET` | your-project.appspot.com |
-| `VITE_FIREBASE_MESSAGING_SENDER_ID` | Your sender ID |
-| `VITE_FIREBASE_APP_ID` | Your app ID |
-| `VITE_DONORBOX_URL` | (Optional) Donorbox embed URL |
+| Name                                | Value                         |
+| ----------------------------------- | ----------------------------- |
+| `VITE_FIREBASE_API_KEY`             | Your Firebase API key         |
+| `VITE_FIREBASE_AUTH_DOMAIN`         | your-project.firebaseapp.com  |
+| `VITE_FIREBASE_PROJECT_ID`          | Your project ID               |
+| `VITE_FIREBASE_STORAGE_BUCKET`      | your-project.appspot.com      |
+| `VITE_FIREBASE_MESSAGING_SENDER_ID` | Your sender ID                |
+| `VITE_FIREBASE_APP_ID`              | Your app ID                   |
+| `VITE_DONORBOX_URL`                 | (Optional) Donorbox embed URL |
 
 ### Step 4: Deploy
 
@@ -228,6 +228,7 @@ Your site will be at `https://your-project.web.app`.
 ### 3. Add to Project
 
 In `.env`:
+
 ```
 VITE_DONORBOX_URL=https://donorbox.org/embed/your-campaign-id
 ```
@@ -237,6 +238,7 @@ Rebuild and redeploy.
 ### Bank Transfer (Manual)
 
 Edit `src/pages/Donate.tsx` and update the bank details section with your actual:
+
 - Bank name
 - Account number
 - SWIFT/IBAN
@@ -276,16 +278,16 @@ Edit `src/pages/Donate.tsx` and update the bank details section with your actual
 
 ## Summary Checklist
 
-- [ ] Firebase project created
-- [ ] Auth, Firestore, Storage enabled
-- [ ] Admin user created
-- [ ] `.env` configured
-- [ ] Pushed to GitHub
-- [ ] Deployed to Vercel
-- [ ] Environment variables added in Vercel
-- [ ] Custom domain connected (optional)
-- [ ] Donorbox configured (optional)
-- [ ] Bank details updated in Donate page
+- [ /] Firebase project created
+- [x ] Auth, Firestore, Storage enabled
+- [/ ] Admin user created
+- [ /] `.env` configured
+- [ /] Pushed to GitHub
+- [/ ] Deployed to Vercel
+- [ /] Environment variables added in Vercel
+- [ -] Custom domain connected (optional)
+- [ x] Donorbox configured (optional)
+- [ x] Bank details updated in Donate page
 
 ---
 
